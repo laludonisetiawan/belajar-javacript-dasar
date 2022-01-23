@@ -1,0 +1,1 @@
+document.writeln("ini adalah hasil file javascript")

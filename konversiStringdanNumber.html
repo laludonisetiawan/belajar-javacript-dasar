@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konversi string dan number</title>
+</head>
+
+<body>
+    <h1>Konversi String dan Number</h1>
+    <ul>
+        <li>Saat membuat aplikasi, kadang kita input dari pengguna selalu dalam bentuk String.
+        </li>
+        <li>
+            Sedangkan kita ingin mengelola datanya dalam bentuk Number.
+        </li>
+        <li>
+            Maka sangat disarankan untuk melakukan konversi tipe data.
+        </li>
+    </ul>
+    <h2>output saat kode javascript di jalankan:</h2>
+    <ul>
+        <li>
+            <h3>masalah tanpa konversi</h3>
+            <p>saat kita ingin menambahkan niali dari variable 1 dan 2 dengan tipe data yang berbeda maka hasilnya akan
+                menampilkan nilai terakhir sebelumnya, karena javascript akan mendeteksi bahwa kedua variable tersebut
+                memiliki tipedata yang berbeda misal variable1 tipedatanya String sedangkan variable tipe datadanya
+                integer.</p>
+        </li>
+    </ul>
+    <h4>output kode javscript tanpa konversi:</h4>
+    <p> misalnya kita ingin mengkonversi tipe data String "1" dengan tipe data Integer 1 <br>
+        maka hasilnya akan menampilkan nilai terakhir sebelum di konversi yaitu string 1 dan integer 1. <br> <br>
+        Untuk itu kita harus tau cara Agar tipedata string bisa di konversi ke dalam Number.
+    <ol>
+        <li>tanpa konversi string "1" to Number 1.</li>
+        <li>konversi string "1" to number 1 (bilangan bulat.)</li>
+        <li>konversi string "1.34" to number 1 (bilangan pecahan)</li>
+        <li>koversi string "4.56" to number 5 (bilangan bulat atau pecahan.)</li>
+        <li>koversi number 1 to string "1.7".</li>
+    </ol>
+    </p>
+
+    <h3>hasil konversi:</h3>
+
+
+    <script>
+        //tanpa konversi
+        const value1 = "1";
+        const value2 = 1;
+
+        //hitung
+        const hasil = value1 + value2;
+
+        //hasil
+        document.writeln(`<p> <h4> 1. hasil tanpa konversi String dan Number =  ${hasil} </h3> </p>`);
+
+
+        // konversi String to number bilangan bulat
+        const value3 = parseInt("1");
+        const value4 = 1;
+
+        //hitung
+        const bilanganBulat = value3 + value4;
+
+        //hasil
+        document.writeln(`<p><h4>2. hasil konversi String to Number (bilangan bulat) = ${bilanganBulat}  </h3> </p>`);
+
+
+        //konversi string to number bilangan pecahan
+        const value5 = parseFloat("1.34");
+        const value6 = 1;
+
+        //hitung
+        const bilanganPecahan = value5 + value6;
+
+        //hasil
+        document.writeln(`<p><h4>3. hasil konversi String to Number (bilangan pecahan) = ${bilanganPecahan}  </h3> </p>`);
+
+
+        // koversi string bilangan bulat atau pecahan
+        const value7 = Number("5");
+        const value8 = 4.56;
+
+        // hitung
+        const bilanganBulatBilanganPecahan = value7 + value8;
+
+        //hasil
+        document.writeln(`<p><h4>4. hasil konversi String to Number (bilangan bulat dan pecahan) = ${bilanganBulatBilanganPecahan}  </h3> </p>`);
+
+
+        // number to string
+        const value11 = 1;
+        const value22 = 1;
+
+        //hitung
+        const hitung = value11.toString() + value22.toString(); // 1 1
+
+        //hasil
+        document.writeln(`<p><h4>5. hasil konversi Number to string = ${hitung} </h3> </p>`);
+
+    </script>
+</body>
+
+</html>
