@@ -1,1 +1,4 @@
-document.writeln("ini adalah hasil file javascript")
+
+
+document.writeln("hallo saat ini saya sedang bejalar javascript");
+
